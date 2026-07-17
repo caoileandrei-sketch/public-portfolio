@@ -1,1 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Alex Rivera — Network Engineer, Wireless &amp; Service Provider</title>
+<meta name="description" content="Portfolio of Alex Rivera, a network engineer specializing in wireless (RF/WLAN) design and service provider routing.">
 
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 24 24%22><rect width=%2224%22 height=%2224%22 rx=%225%22 fill=%22%23157A64%22/><path d=%22M6 16h2v3H6zM10.5 12h2v7h-2zM15 8h2v11h-2z%22 fill=%22white%22/></svg>">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="container nav-inner">
+    <a href="#top" class="brand">
+      <svg class="brand-mark" viewBox="0 0 24 24" fill="none">
+        <rect x="5" y="14" width="3" height="6" rx="0.5" fill="currentColor"/>
+        <rect x="10.5" y="10" width="3" height="10" rx="0.5" fill="currentColor"/>
+        <rect x="16" y="5" width="3" height="15" rx="0.5" fill="currentColor"/>
+      </svg>
+      <span class="brand-text">Alex Rivera <span>/ net.eng</span></span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <span class="status-pill"><span class="status-dot"></span><span class="status-text">open to opportunities</span></span>
+  </div>
+</nav>
+
+<main id="top">
+
+  <!-- HERO -->
+  <header class="hero">
+    <div class="container hero-grid">
+      <div class="hero-copy">
+        <div class="hero-kicker">// wireless &amp; service provider network engineering</div>
+        <h1>Alex Rivera</h1>
+        <div class="hero-role">Network Engineer — RF Design · Routing &amp; Switching · Carrier Networks</div>
+        <p class="lede">I design and operate networks that stay up: wireless deployments tuned for real RF environments, and service-provider cores built for scale. Eight years across enterprise Wi-Fi and carrier routing.</p>
+        <div class="hero-ctas">
+          <a href="#contact" class="btn btn-primary">Get in touch</a>
+          <a href="assets/resume.pdf" class="btn btn-ghost">Download résumé</a>
+        </div>
+      </div>
+      <div class="hero-visual" aria-hidden="true">
+        <svg class="topo" viewBox="0 0 420 360" xmlns="http://www.w3.org/2000/svg">
+          <path class="topo-link" d="M210 60 L90 150" />
+          <path class="topo-link" d="M210 60 L330 150" />
+          <path class="topo-link" d="M210 60 L210 170" />
+          <path class="topo-link topo-link--live" d="M90 150 L60 260" />
+          <path class="topo-link topo-link--live" d="M90 150 L150 250" />
+          <path class="topo-link" d="M210 170 L150 250" />
+          <path class="topo-link topo-link--live" d="M210 170 L280 260" />
+          <path class="topo-link" d="M330 150 L280 260" />
+          <path class="topo-link" d="M330 150 L370 250" />
+
+          <circle class="topo-node topo-node--active" cx="210" cy="60" r="20"/>
+          <circle class="topo-dot" cx="210" cy="60" r="3.5"/>
+          <text class="topo-label" x="210" y="35" text-anchor="middle">CORE-RTR01</text>
+
+          <circle class="topo-node" cx="90" cy="150" r="16"/>
+          <text class="topo-label" x="90" y="128" text-anchor="middle">PE-EDGE</text>
+
+          <circle class="topo-node" cx="330" cy="150" r="16"/>
+          <text class="topo-label" x="330" y="128" text-anchor="middle">PE-EDGE</text>
+
+          <circle class="topo-node topo-node--active" cx="210" cy="170" r="14"/>
+          <text class="topo-label" x="210" y="196" text-anchor="middle">AGG-SW</text>
+
+          <circle class="topo-node" cx="60" cy="260" r="12"/>
+          <text class="topo-label" x="60" y="284" text-anchor="middle">AP-14</text>
+
+          <circle class="topo-node" cx="150" cy="250" r="12"/>
+          <text class="topo-label" x="150" y="274" text-anchor="middle">AP-22</text>
+
+          <circle class="topo-node topo-node--active" cx="280" cy="260" r="12"/>
+          <text class="topo-label" x="280" y="284" text-anchor="middle">AP-31</text>
+
+          <circle class="topo-node" cx="370" cy="250" r="12"/>
+          <text class="topo-label" x="370" y="274" text-anchor="middle">AP-40</text>
+        </svg>
+      </div>
+    </div>
+  </header>
+
+  <!-- ABOUT -->
+  <section class="section" id="about">
+    <div class="container about-grid">
+      <div class="about-copy reveal">
+        <div class="eyebrow">show version</div>
+        <h2 style="margin-bottom:18px; font-size:clamp(24px,3vw,30px);">About</h2>
+        <p>I'm a network engineer who splits time between two worlds that don't usually share an org chart: wireless RF design and service-provider routing. That combination means I think about a network end to end — from the antenna pattern on an access point to the BGP policy that decides which path a packet takes out to the internet.</p>
+        <p>Most of my work has centered on high-density wireless deployments (stadiums, campuses, warehouses) and multi-site MPLS/SD-WAN builds for carriers and their enterprise customers. I care about the details that show up at 2 a.m. — co-channel interference, route flapping, a QoS policy that looked fine on paper.</p>
+        <p>Based in <span class="mono">Manila, PH</span>, working with teams across APAC and remote-first globally.</p>
+      </div>
+      <div class="cli-card reveal">
+        <div class="cli-titlebar">
+          <span class="cli-dot"></span><span class="cli-dot"></span><span class="cli-dot"></span>
+        </div>
+        <div><span class="cli-prompt">alex@netops:~$</span> show summary</div>
+        <hr class="cli-rule">
+        <div class="cli-row"><span class="cli-key">focus</span><span class="cli-val">Wireless (RF/WLAN) + SP Routing</span></div>
+        <div class="cli-row"><span class="cli-key">experience</span><span class="cli-val">8 years</span></div>
+        <div class="cli-row"><span class="cli-key">certifications</span><span class="cli-val">CCNP ENT, CWNP CWDP</span></div>
+        <div class="cli-row"><span class="cli-key">coverage</span><span class="cli-val">APAC, remote-global</span></div>
+        <div class="cli-row"><span class="cli-key">status</span><span class="cli-val" style="color:#6FB7A3;">available — Q3 2026</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE (traceroute) -->
+  <section class="section section--alt" id="experience">
+    <div class="container">
+      <div class="section-head reveal">
+        <div class="eyebrow">traceroute --experience</div>
+        <h2>Where the packets have been</h2>
+        <p>Career history, formatted like the tool I run most: each stop is a hop, each hop has a round-trip time.</p>
+      </div>
+      <div class="trace-head">
+        <span style="width:56px;">HOP</span>
+        <span>HOST / ROLE — TENURE — DESCRIPTION</span>
+      </div>
+      <ol class="trace-list" id="experience-list"></ol>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="section" id="skills">
+    <div class="container">
+      <div class="section-head reveal">
+        <div class="eyebrow">show running-config</div>
+        <h2>Skills &amp; tooling</h2>
+        <p>Grouped the way I'd actually organize a rack: by discipline, not alphabetically.</p>
+      </div>
+      <div class="skills-grid" id="skills-grid"></div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="section section--alt" id="projects">
+    <div class="container">
+      <div class="section-head reveal">
+        <div class="eyebrow">case studies</div>
+        <h2>Selected work</h2>
+        <p>A few projects that were hard enough to be worth writing down.</p>
+      </div>
+      <div class="projects-grid" id="projects-grid"></div>
+    </div>
+  </section>
+
+  <!-- CERTIFICATIONS -->
+  <section class="section" id="certifications">
+    <div class="container">
+      <div class="section-head reveal">
+        <div class="eyebrow">show license</div>
+        <h2>Certifications</h2>
+      </div>
+      <div class="cert-row" id="cert-row"></div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section section--alt contact" id="contact">
+    <div class="container contact-inner">
+      <div class="reveal">
+        <div class="eyebrow">open connection</div>
+        <h2>Let's talk networks.</h2>
+        <p class="lede">Open to full-time roles, contract RF surveys, or a second opinion on a routing design that isn't behaving. Reach out — I usually reply within a day.</p>
+      </div>
+      <div class="contact-links reveal">
+        <a class="contact-link" href="mailto:alex.rivera@example.com"><span>email — alex.rivera@example.com</span><span class="arrow">→</span></a>
+        <a class="contact-link" href="https://linkedin.com/in/example" target="_blank" rel="noopener">linkedin — /in/example</a>
+        <a class="contact-link" href="https://github.com/example" target="_blank" rel="noopener">github — /example</a>
+        <a class="contact-link" href="assets/resume.pdf">résumé — download PDF</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <span>&copy; 2026 Alex Rivera</span>
+  <span>built with html · css · js — hosted on github pages</span>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
